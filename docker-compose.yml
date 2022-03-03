@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  postfix:
+    build: .
+    volumes:
+      - ./email_data:/var/mail
+    ports:
+      - "2500:25"
+      
